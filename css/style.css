@@ -1,0 +1,252 @@
+
+body{
+    
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.header{
+    display:flex;
+    margin: 2px;
+    margin-bottom: 1.7rem;
+  
+    
+    background-color:rgb(201, 195, 188);
+    border-radius: 20px;
+    z-index: 999;
+   }
+.header__img{
+  
+    height:10vh;
+    width:10vh;
+    border-radius: 50%;
+    align-self: center;
+
+
+   
+}
+.header__nav{
+    display:flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+ 
+
+}
+.header__un{
+    width:100%;
+    display:flex;
+    list-style-type:none;
+    font-size:1.3rem; 
+    padding:1rem;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+   
+    
+}
+.header__anch{
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+.header__anch:hover{
+    font-size:22px;
+    background-color: rgb(148, 148, 192);
+    color: rgb(87, 63, 116);
+}
+
+.header__anch--primary{
+    font-weight: bold;
+    text-shadow:2px 2px rgb(190, 162, 119);
+}
+
+/* the footer of the website 
+---------------------------------------------------
+*/
+.footer {
+ 
+    display:flex;
+    justify-content: space-between; 
+    align-items: space-evenly;  
+    background-color:rgb(201, 195, 188);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.footer__info{
+    display:flex;
+    width: 48%;
+    display:flex;
+    flex-direction: column;
+       
+
+}
+.footer__paragraph{
+
+    padding: 2%;
+    font-size: 1.5rem;
+    border:0.5px solid rgb(99, 93, 93);
+    margin-left: 4px;
+    border-radius: 5px;
+}
+.footer__policy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    }
+.footer__anch{
+   
+    font-size: 1.4rem;
+    text-decoration:none;
+ 
+}
+
+.footer__address{
+    width: 49%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;    
+
+}
+.footer__addresslogo{
+   
+      border-radius:100%;
+      height: 4rem;
+         
+
+}
+.footer__addresslogo:hover{
+    transform:translateY(-5px);
+}
+
+
+/* TO improve the responsiveness i use the standard screen break points of    
+    Small (smaller than 480px)
+    Medium (488px to 700px)
+    Large (1008px and larger)
+    ------------------------------------------------------
+    */
+
+@media screen and (max-width:488px) {
+    .header{
+        display:flex;
+        justify-content: space-evenly;
+        position: relative;
+        background-color: white;
+    }
+    
+.toggler__line{
+         
+       background-color: rgb(15, 15, 15);
+       width:30px;
+       height:5px;
+       margin:5px;
+       border-radius: 5px;
+      
+ }
+ 
+ 
+    
+.toggler{
+        position: fixed;
+        cursor: pointer;
+        top:6vh;
+        right:14%; 
+     
+        z-index: 1;
+ }
+     
+ .header__nav{
+        display:none;
+        position:fixed;
+        background-color: rgb(7, 7, 221);
+        height:100vh; 
+        border-radius: 8px;
+        right:0px;
+        top:0px;
+        width:100%;
+           
+        clip-path: circle(100px at 100% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+       
+      
+ } 
+ .active{
+      clip-path: circle(800px at 100% -20%);
+      -webkit-clip-path: circle(800px at 90% -20%); 
+      display: flex;
+        
+
+}
+ .header__un {
+    background-color: rgb(13, 27, 233);
+    flex-direction: column;
+    width:100%; 
+    height: 100vh;
+        
+    }
+    .header__img{
+    position: absolute;
+    top: 4vh;
+    left:2vh;
+}
+ .footer__addresslogo{
+      display: none;
+ 
+} 
+.main__heading{
+      margin-top: 4rem;
+  }
+}
+
+/* this is the tablet level and related items */
+
+
+
+
+@media screen and (min-width:488px) and  (max-width:750px)   {
+    .header{
+        height:18vh;
+       }
+
+    .header__un{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-between;
+        padding-right:30px
+        }
+        
+    .header__anch{
+        margin:0.6rem;     
+       
+    }
+
+    .footer {
+    justify-content: space-between;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+   
+    }
+   
+
+.footer__anch{
+    font-size: 2.5vh;
+}
+
+  
+.footer__addresslogo{
+      display: none;
+
+} 
+.main__heading{
+      margin-top: 4rem;
+  }
+
+}
