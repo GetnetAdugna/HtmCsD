@@ -79,5 +79,12 @@
   .main__heading{
       margin-top: 4rem;
   }
+  .main__heading__elements:nth-of-type(3){
+      display: none;
+  }
+  .main__body__elements:nth-of-type(3n){
+       display: none;
+
+  }
 
 }
